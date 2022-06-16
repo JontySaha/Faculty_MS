@@ -57,7 +57,7 @@ public class Controller {
 	}
 	
 	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<Map<String, Boolean>> deleteEmployee(@PathVariable Long id) throws Exception{
+	public ResponseEntity<Map<String, Boolean>> deleteFaculty(@PathVariable Long id) throws Exception{
 		Faculty faculty = facultyRepository.findById(id)
 				.orElseThrow(() -> new Exception("Faculty not exist with id :" + id));
 		
