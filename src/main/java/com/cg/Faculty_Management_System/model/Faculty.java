@@ -34,4 +34,10 @@ public class Faculty {
 	
 	@Column(name = "course",nullable=false)
 	private String course;
+	
+	@Column(name = "phoneNo",nullable=false)
+	private String phoneNo;
+	
+	@Column(name = "salary",nullable=false)
+	private String salary;
 }
